@@ -6,6 +6,6 @@ class Cat
   end
   
   def name
-    @name = name
+    @nam
   end
 end
