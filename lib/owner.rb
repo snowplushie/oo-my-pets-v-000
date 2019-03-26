@@ -31,4 +31,20 @@ class Owner
     fish = Fish.new(name)
     @pets[:fishes] << fish
   end
+  
+  def self.all
+    @@all
+  end
+  
+  def self.count
+    @@all.count
+  end
+  
+  def self.reset_all
+    @all.clear
+  end
+  
+  def say_species
+    "I am a #{@species}."
+  end
 end
