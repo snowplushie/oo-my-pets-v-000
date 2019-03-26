@@ -47,4 +47,16 @@ class Owner
   def say_species
     "I am a #{@species}."
   end
+  
+  def walk_dogs
+    @pets[:dogs].each do {|d| d.mood = "happy"}
+  end
+  
+  def play_with_cats
+    @pets[:cats].each do {|c| c.mood = "happy"}
+  end
+  
+  def feed_fish
+    @pets[:fishes].each do {|f| f.mood = "happy"}
+  end
 end
